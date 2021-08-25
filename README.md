@@ -1,2 +1,2 @@
-# django
-django study
+# Django
+Django Study
