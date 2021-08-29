@@ -16,7 +16,20 @@
             testing
         </h1>
 
-    <!-- display & rem unit
+        <form action="/account/hello_world/" method="post">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="POST">
+        </form>
+
+        <h1>
+            {{ text }}
+        </h1>
+
+    </div>
+
+{% endblock %}
+
+<!-- display & rem unit
     <div class="testing" style='display: block;'>block</div>
     <div class="testing">default</div>
     
@@ -31,9 +44,5 @@
     <div class="testing" style='display: inline-block; width: 3em; height: 3em;'>em block</div>
     <div class="testing" style='display: inline-block; width: 48px; height: 48px;'>px block</div>
     <div class="testing" style='display: inline-block; width: 30%; height: 30%;'>% block</div>
-    -->
+-->
     
-
-    </div>
-
-{% endblock %}
